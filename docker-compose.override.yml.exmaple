@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  web:
+    labels:
+      - traefik.frontend.entryPoints=http,https
+      - traefik.http.routers.lti-next.entrypoints=web
+      - traefik.http.routers.lti-next.rule=Host(`lti-next.docker`)
+
+networks:
+  default:
+    external:
+      name: traefik_net
