@@ -17,7 +17,7 @@ sends the UI back to the platform.
 Platform  <-- messages over a web socket --> Tool
 
 This flow puts quite adds quite a bit of complexity to the tool. It may
-be worth exploring having a rely in between the platform and tool that
+be worth exploring having a relay in between the platform and tool that
 handles some of the complexity:
 
 Platform <-- messages over websocket --> Relay <-- messages over websocket --> Tool
